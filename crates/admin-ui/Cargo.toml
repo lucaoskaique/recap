@@ -1,0 +1,16 @@
+[package]
+name = "admin-ui"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your@email.com>"]
+description = "Admin UI for Recap CMS"
+
+[dependencies]
+chrono = "0.4.39"
+gloo = "0.11.0"
+lipsum = "0.9.1"
+markdown = "0.3.0"
+pulldown-cmark = "0.12.2"
+stylist = "0.13.0"
+wasm-logger = "0.2.0"
+yew-router = "0.18.0"
