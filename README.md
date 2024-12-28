@@ -1,53 +1,120 @@
-# Rust WASM CMS
+# Recap
 
-This project is a Rust-based WebAssembly Content Management System (CMS), inspired by DECAP CMS. The goal is to port the functionality of DECAP CMS to Rust, leveraging the performance and safety benefits of Rust along with the portability of WebAssembly.
+> Content Management, Reforged in Rust
 
-## Features
+Recap is a modern Content Management System built with Rust and WebAssembly, inspired by Decap CMS. It combines Rust's performance and safety with WebAssembly's portability to create a powerful, efficient, and developer-friendly CMS.
 
-- **Rust and WebAssembly**: High performance and safety with Rust, combined with the portability of WebAssembly.
-- **Content Management**: Manage your content easily with a user-friendly interface.
-- **Extensible**: Easily extend the functionality with plugins and custom modules.
-- **Secure**: Built with security in mind, leveraging Rust's strong type system and memory safety guarantees.
+## 🚀 Features
 
-## Getting Started
+- **Rust Core**: High-performance backend leveraging Rust's safety and concurrency
+- **WebAssembly**: Browser-native performance with WASM compilation
+- **Git-Based**: Version control built into your content workflow
+- **Modern UI**: Sleek admin interface with real-time preview
+- **Developer First**: API-driven architecture with extensive plugin system
+- **Media Management**: Built-in asset optimization and management
+- **Type Safe**: Strong type system throughout the entire stack
 
-### Prerequisites
+## 🛠️ Prerequisites
 
 - [Rust](https://www.rust-lang.org/tools/install)
 - [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
+- [Node.js](https://nodejs.org/) (for development)
 
-### Installation
+## ⚡ Quick Start
 
-1. Clone the repository:
-  ```sh
-  git clone https://github.com/yourusername/rust-wasm-cms.git
-  cd rust-wasm-cms
-  ```
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/recap
+cd recap
 
-2. Build the project:
-  ```sh
-  wasm-pack build
-  ```
+# Build the WASM package
+wasm-pack build
 
-3. Serve the project:
-  ```sh
-  npm install
-  npm start
-  ```
+# Start the development server
+cd www
+npm install
+npm start
+```
 
-## Usage
+## 🏗️ Project Structure
 
-Instructions on how to use the CMS will be provided here.
+```
+/crates
+  /core         - Core CMS functionality
+  /git          - Git integration
+  /markdown     - Markdown processing
+  /admin-ui     - Admin interface
+/examples       - Usage examples
+/tests         - Integration tests
+/www           - Web frontend
+```
 
-## Contributing
+## 📦 Modules
 
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests.
+### Core (Rust)
+- Git Authentication
+- File Management (Markdown/YAML/JSON)
+- WASM/JS Bridge
+- Git Persistence Layer
 
-## License
+### Frontend (WASM/JS)
+- Admin Interface
+- Content Editor
+- Real-time Preview
+- Media Manager
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add: Amazing Feature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and development process.
+
+## 🎯 Roadmap
+
+### Phase 1: Foundation
+- [ ] Core Rust implementation
+- [ ] Git authentication system
+- [ ] Basic content editor
+- [ ] Admin interface
+
+### Phase 2: Enhancement
+- [ ] Plugin system
+- [ ] Advanced UI customization
+- [ ] Multiple database support
+- [ ] GraphQL API
+
+### Phase 3: Scale
+- [ ] Custom workflows
+- [ ] Internationalization
+- [ ] Advanced permissions
+- [ ] CDN integration
+
+## 🔒 Security
+
+Security is a top priority. If you discover a security vulnerability, please open an issue using our security issue template.
+
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
-- [DECAP CMS](https://decapcms.org/) for the inspiration.
-- [Rust](https://www.rust-lang.org/) and [WebAssembly](https://webassembly.org/) communities for their amazing tools and support.
+- [Decap CMS](https://decapcms.org/) for inspiration
+- [Rust](https://www.rust-lang.org/) community
+- [WebAssembly](https://webassembly.org/) community
+
+## 📞 Contact
+
+- Website: [recap.dev](https://recap.dev) _(coming soon)_
+- Twitter: [@recapcms](https://twitter.com/recapcms) _(coming soon)_
+- Email: [contact@recap.dev](mailto:contact@recap.dev) _(coming soon)_
+
+## ⭐ Support
+
+If you find Recap useful, please consider giving it a star on GitHub! Your support helps make the project better.
