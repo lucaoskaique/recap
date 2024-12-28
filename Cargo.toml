@@ -1,0 +1,28 @@
+[package]
+name = "recap"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+futures = "0.3.31"
+git2 = "0.19.0"
+js-sys = "0.3.76"
+markdown = "0.3.0"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.134"
+wasm-bindgen = "0.2.99"
+wasm-bindgen-futures = "0.4.49"
+web-sys = {version = "0.3.76", features = [
+    "Document",
+    "Element",
+    "HtmlElement",
+    "Node",
+    "Window",
+    "console"
+]}
+
+[workspace]
+members = ["crates/core", "crates/git", "crates/markdown", "crates/admin-ui"]
